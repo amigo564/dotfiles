@@ -1,0 +1,55 @@
+{
+    "editor.fontSize": 15,
+    "workbench.colorTheme": "Dark SynthWave '84",
+    "workbench.startupEditor": "readme",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.rulers": [120],
+
+    // disable background updates 
+    "extensions.autoCheckUpdates": false,
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "manual",
+
+    // vim stuff
+    "vim.leader": " ",
+    "vim.showMarksInGutter": true,
+
+    // camelCaseMotion only works with leader key pressed 
+    "vim.camelCaseMotion.enable": true,
+
+    // <leader><Leader>w to trigger
+    "vim.easymotion": true,
+    "vim.changeWordIncludesWhitespace": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "revealInExplorer"
+            ],
+        },
+    ],
+}
